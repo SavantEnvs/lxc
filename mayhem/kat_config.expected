@@ -1,0 +1,24 @@
+lxc.uts.name=[katbox]
+lxc.arch=[x86_64]
+lxc.tty.max=[4]
+lxc.pty.max=[1000]
+lxc.log.level=[DEBUG]
+lxc.rootfs.path=[/some/path]
+lxc.net.0.type=[veth]
+lxc.net.0.link=[br0]
+lxc.net.0.ipv4.address=[10.0.3.5/24]
+lxc.cgroup2.memory.max=[256M
+]
+lxc.mount.entry=[/dev/dri dev/dri none bind,optional,create=dir
+]
+lxc.environment=[FOO=bar
+BAZ=qux
+]
+lxc.start.delay=[5]
+lxc.signal.halt=[10]
+lxc.net.0 has type: yes
+lxc.net.0 has link: yes
+lxc.net.0 has hwaddr: yes
+lxc.net.0 has ipv4.address: yes
+lxc.net.0 has bogus: no
+lxc.tty.max after clear=[4]

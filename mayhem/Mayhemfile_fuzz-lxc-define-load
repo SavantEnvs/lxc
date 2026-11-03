@@ -1,0 +1,9 @@
+project: savantenvs/lxc
+target: fuzz-lxc-define-load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-lxc-define-load/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-lxc-define-load
+    libfuzzer: true
+    timeout: 5
