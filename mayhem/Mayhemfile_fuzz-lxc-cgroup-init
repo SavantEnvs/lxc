@@ -1,0 +1,9 @@
+project: savantenvs/lxc
+target: fuzz-lxc-cgroup-init
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-lxc-cgroup-init/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-lxc-cgroup-init
+    libfuzzer: true
+    timeout: 5
